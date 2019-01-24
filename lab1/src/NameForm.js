@@ -19,7 +19,7 @@ class NameForm extends React.Component {
               document.write("Hello User! Your Name is ",":" +" "+ Name);
               return true;
           } else{
-              alert("Error the User Used Non-Ascii Characters");
+              alert("Error the User Used Non-Ascii Characters!");
               return false;
           }
         event.preventDefault();
