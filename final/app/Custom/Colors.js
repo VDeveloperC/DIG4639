@@ -1,0 +1,11 @@
+const primaryStart = 'blue';
+const primaryEnd = 'skyblue';
+export const primaryGradientArray = [primaryStart, primaryEnd];
+export const lightWhite = 'white';
+export const inputPlaceholder = 'white';
+export const lighterWhite = '#f4e4e2';
+export const Inactive = 'orange';
+export const Active = 'lime';
+export const itemListText = 'white';
+export const itemListTextStrike = 'gray';
+export const deleteIconColor = 'red';
