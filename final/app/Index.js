@@ -16,6 +16,7 @@ import SubTitle from './components/SubTitle';
 import Input from './components/Input';
 import List from './components/List';
 import Button from './components/Button';
+import SetBut from './components/SetBut';
 
 const headerTitle = 'Todo List App';
 
@@ -142,9 +143,16 @@ export default class Index extends React.Component {
 		return (
 			<LinearGradient colors={primaryGradientArray} style={styles.container}>
 				<StatusBar barStyle="light-content" />
+            
+    
 				<View style={styles.centered}>
 					<Header title={headerTitle} />
+                    
 				</View>
+            
+             <View style={styles.set}>
+            <SetBut onPress={() => this.props.navigation.navigate('Settings')} label="Settings"></SetBut>
+          </View>
 				<View style={styles.inputContainer}>
 					<SubTitle subtitle={"What Do I Need To Do?"} />
 					<Input
@@ -206,6 +214,10 @@ const styles = StyleSheet.create({
 		flexDirection: 'row',
 		alignItems: 'center',
 		justifyContent: 'space-between'
-	}
+	},
+    set:{
+        padding:10,
+        marginTop:-30
+    }
 	
 });
